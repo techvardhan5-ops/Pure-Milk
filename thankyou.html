@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - PureMilk Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🥛 PureMilk Mart</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Thank You Section -->
+    <section class="thankyou-section">
+        <div class="container">
+            <div class="thankyou-card">
+                <div class="success-icon">✓</div>
+                <h1 class="thankyou-title">Thank You!</h1>
+                <p class="thankyou-subtitle">Your order has been placed successfully.</p>
+                
+                <div class="order-details">
+                    <div class="order-detail-row">
+                        <span>Order ID:</span>
+                        <strong id="orderId">Loading...</strong>
+                    </div>
+                    <div class="order-detail-row">
+                        <span>Total Amount:</span>
+                        <strong id="orderAmount">₹0</strong>
+                    </div>
+                </div>
+
+                <p class="delivery-info">Your order will be delivered within 24 hours.</p>
+
+                <div class="thankyou-buttons">
+                    <a href="index.html" class="btn btn-primary">Go to Home</a>
+                    <a href="products.html" class="btn btn-secondary">Shop More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PureMilk Mart - Fresh & Pure Dairy Delivered to You</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        displayOrderConfirmation();
+    </script>
+</body>
+</html>
