@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PureMilk Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🥛 PureMilk Mart</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/21/16/03/bottles-1846386_960_720.jpg" alt="Full Cream Milk">
+                    <h3>Full Cream Milk 1L</h3>
+                    <p class="price">₹60</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(1, 'Full Cream Milk 1L', 60, 'https://cdn.pixabay.com/photo/2016/11/21/16/03/bottles-1846386_960_720.jpg')">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/05/15/41/yogurt-2474032_960_720.jpg" alt="Curd">
+                    <h3>Curd 500g</h3>
+                    <p class="price">₹45</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(2, 'Curd 500g', 45, 'https://cdn.pixabay.com/photo/2017/07/05/15/41/yogurt-2474032_960_720.jpg')">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/15/17/14/ghee-5176154_960_720.jpg" alt="Ghee">
+                    <h3>Ghee 500ml</h3>
+                    <p class="price">₹420</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(3, 'Ghee 500ml', 420, 'https://cdn.pixabay.com/photo/2020/05/15/17/14/ghee-5176154_960_720.jpg')">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/05/13/58/butter-1122678_960_720.jpg" alt="Butter">
+                    <h3>Butter 100g</h3>
+                    <p class="price">₹55</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(4, 'Butter 100g', 55, 'https://cdn.pixabay.com/photo/2016/01/05/13/58/butter-1122678_960_720.jpg')">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/04/13/24/cottage-cheese-2371535_960_720.jpg" alt="Paneer">
+                    <h3>Paneer 200g</h3>
+                    <p class="price">₹80</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(5, 'Paneer 200g', 80, 'https://cdn.pixabay.com/photo/2017/06/04/13/24/cottage-cheese-2371535_960_720.jpg')">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2020/03/21/11/47/rasgulla-4954598_960_720.jpg" alt="Rasmalai">
+                    <h3>Rasmalai Pack</h3>
+                    <p class="price">₹120</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(6, 'Rasmalai Pack', 120, 'https://cdn.pixabay.com/photo/2020/03/21/11/47/rasgulla-4954598_960_720.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PureMilk Mart - Fresh & Pure Dairy Delivered to You</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
