@@ -3,12 +3,10 @@ function getCart() {
     const cart = localStorage.getItem('cart');
     return cart ? JSON.parse(cart) : [];
 }
-
 function saveCart(cart) {
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCartCount();
 }
-
 // Update cart count badge
 function updateCartCount() {
     const cart = getCart();
@@ -19,12 +17,10 @@ function updateCartCount() {
         badge.style.display = totalItems > 0 ? 'inline' : 'none';
     });
 }
-
 // Add product to cart
 function addToCart(id, name, price, image) {
     let cart = getCart();
     const existingItem = cart.find(item => item.id === id);
-
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
@@ -36,21 +32,17 @@ function addToCart(id, name, price, image) {
             quantity: 1
         });
     }
-
     saveCart(cart);
-    
     // Show feedback
     const btn = event.target;
     const originalText = btn.textContent;
     btn.textContent = '✓ Added!';
     btn.style.background = '#27ae60';
-    
     setTimeout(() => {
         btn.textContent = originalText;
         btn.style.background = '';
     }, 1000);
 }
-
 // Display cart items
 function displayCart() {
     const cart = getCart();
@@ -64,7 +56,6 @@ function displayCart() {
         emptyCartDiv.style.display = 'block';
         return;
     }
-
     emptyCartDiv.style.display = 'none';
     cartItemsDiv.style.display = 'block';
     cartSummaryDiv.style.display = 'block';
