@@ -1,67 +1,85 @@
-<div class="products-grid">
-    <!-- Product 1 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Milk">
-        <h3>Full Cream Milk 1L</h3>
-        <p class="price">₹60</p>
-        <button class="add-to-cart-btn"
-            onclick="addToCart(1, 'Full Cream Milk 1L', 60, 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80')">
-            Add to Cart
-        </button>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PureMilk Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🥛 PureMilk Mart</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Product 2 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1589712234905-7f15a27593d6?auto=format&fit=crop&w=600&q=80" alt="Curd">
-        <h3>Curd 500g</h3>
-        <p class="price">₹45</p>
-        <button class="add-to-cart-btn"
-            onclick="addToCart(2, 'Curd 500g', 45, 'https://images.unsplash.com/photo-1589712234905-7f15a27593d6?auto=format&fit=crop&w=600&q=80')">
-            Add to Cart
-        </button>
-    </div>
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=300&fit=crop" alt="Full Cream Milk">
+                    <h3>Full Cream Milk 1L</h3>
+                    <p class="price">₹60</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(1, 'Full Cream Milk 1L', 60, 'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=300&fit=crop')">Add to Cart</button>
+                </div>
 
-    <!-- Product 3 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7b33a2d49?auto=format&fit=crop&w=600&q=80" alt="Ghee">
-        <h3>Ghee 500ml</h3>
-        <p class="price">₹420</p>
-        <button class="add-to-cart-btn"
-            onclick="addToCart(3, 'Ghee 500ml', 420, 'https://images.unsplash.com/photo-1600185365483-26d7b33a2d49?auto=format&fit=crop&w=600&q=80')">
-            Add to Cart
-        </button>
-    </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Curd">
+                    <h3>Curd 500g</h3>
+                    <p class="price">₹45</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(2, 'Curd 500g', 45, 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop')">Add to Cart</button>
+                </div>
 
-    <!-- Product 4 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=600&q=80" alt="Butter">
-        <h3>Butter 100g</h3>
-        <p class="price">₹55</p>
-        <button class="add-to-cart-btn"
-            onclick="addToCart(4, 'Butter 100g', 55, 'https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&w=600&q=80')">
-            Add to Cart
-        </button>
-    </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&h=300&fit=crop" alt="Ghee">
+                    <h3>Ghee 500ml</h3>
+                    <p class="price">₹420</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(3, 'Ghee 500ml', 420, 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&h=300&fit=crop')">Add to Cart</button>
+                </div>
 
-    <!-- Product 5 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1588167056547-c096af21d1df?auto=format&fit=crop&w=600&q=80" alt="Paneer">
-        <h3>Paneer 200g</h3>
-        <p class="price">₹80</p>
-        <button class="add-to-cart-btn"
-            onclick="addToCart(5, 'Paneer 200g', 80, 'https://images.unsplash.com/photo-1588167056547-c096af21d1df?auto=format&fit=crop&w=600&q=80')">
-            Add to Cart
-        </button>
-    </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=400&h=300&fit=crop" alt="Butter">
+                    <h3>Butter 100g</h3>
+                    <p class="price">₹55</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(4, 'Butter 100g', 55, 'https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=400&h=300&fit=crop')">Add to Cart</button>
+                </div>
 
-    <!-- Product 6 -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1626071527179-2b5a67f52c56?auto=format&fit=crop&w=600&q=80" alt="Rasmalai">
-        <h3>Rasmalai Pack</h3>
-        <p class="price">₹120</p>
-        <button class="add-to-cart-btn"
-            onclick="addToCart(6, 'Rasmalai Pack', 120, 'https://images.unsplash.com/photo-1626071527179-2b5a67f52c56?auto=format&fit=crop&w=600&q=80')">
-            Add to Cart
-        </button>
-    </div>
-</div>
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop" alt="Paneer">
+                    <h3>Paneer 200g</h3>
+                    <p class="price">₹80</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(5, 'Paneer 200g', 80, 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop')">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=300&fit=crop" alt="Rasmalai">
+                    <h3>Rasmalai Pack</h3>
+                    <p class="price">₹120</p>
+                    <button class="add-to-cart-btn" onclick="addToCart(6, 'Rasmalai Pack', 120, 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=300&fit=crop')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PureMilk Mart - Fresh & Pure Dairy Delivered to You</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
